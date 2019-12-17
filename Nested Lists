@@ -1,14 +1,15 @@
-  lstscore=[]
-  lstmarks=[]
-    for _ in range(int(input())):
-        name = input()
-        score = float(input())
-        lstmarks.append([name, score])
-        lstscore.append(score)
-        lstscore=sorted(lstscore)
-    for secondhigh, var in lstscore:
-        set1=set(lstmarks)
-        set2=list(set1)
-        final=sorted(set2)
-        if var==final[1]:
-            print(secondhigh)
+  if __name__ == '__main__':
+        lstscore=[]
+        lstmarks=[]
+        for _ in range(int(input())):
+            name = input()
+            score = float(input())
+            lstmarks.append([name, score])
+            lstscore.append(score)
+            lstscore=sorted(lstscore)
+        for secondhigh, var in lstscore:
+            set1=set(lstmarks)
+            set2=list(set1)
+            final=sorted(set2)
+            if var==final[1]:
+                print(secondhigh)
